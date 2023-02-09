@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Sarang Gami</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3f7a1979ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo2preview.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Analyst / Data Scientist</p>
+            <h1>Hi, I'm <span>Sarang Gami</span><br>From India</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ------------about------------ -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/preview1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A data scientist is a professional who is skilled in extracting insights and knowledge from large and complex datasets. 
+                They use a combination of technical skills in areas such as statistics, machine learning, programming, and data visualization, 
+                as well as strong business acumen and communication skills, to turn data into actionable insights that drive decision-making in organizations.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>DATA ANALYST</span><BR>MSExcel/ MySQL/ MongoDB/ PowerBI</li><BR>
+                        <li><span>DATA SCIENTIST</span><BR>Python/ EDA/ ML/ statistics</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - current</span><BR>Data Scientist Internship at AlmaBetter</li><BR>
+                        <li><span>2021 - 2022</span><BR>Data Analyst(ppc) at OmniTech Pvt. Ltd.</li><BR>
+                        <li><span>2020 - 2021</span><BR>Planning engg. Intern at shreeJi Pvt.Ltd.</li><BR>  
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016 - 2020</span><BR>Mechanical engg. at Parul University</li><BR>
+                        <li><span>2014 - 2016</span><BR>11th-12th Science at Vishwagram School</li><BR>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------services------------ -->
+<div id="blogs"> 
+    <div class="container">
+        <h1 class="sub-title">My Blogs</h1>
+        <div class="blogs-list">
+            <div>
+                <i class="fa-solid fa-blog"></i>
+                <h2>Blog1</h2>
+                <p>this blog is on zomato vs swiggy.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-blog"></i>
+                <h2>Blog2</h2>
+                <p>this blog is on zomato vs swiggy.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-blog"></i>
+                <h2>Blog3</h2>
+                <p>this blog is on zomato vs swiggy.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------portfolio---------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/airbnb project.gif">
+                <div class="layer">
+                    <h3>Airbnb Booking EDA</h3>
+                    <p>Exploratory data analysis of Airbnb bookings in New York City to gain insights into the travel industries
+                    and Uncovers trends, patterns, user preferences and behavior.</p>
+                    <a href="https://github.com/SarangGami/Capstone-EDA-project-Airbnb-bookings-analysis"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/music store.gif">
+                <div class="layer">
+                    <h3>PostgreSQL Music Store CaseStudy</h3>
+                    <p>This includes analysis of various datasets with questions covering a range of difficulty levels from basic to advanced.
+                        and valuable resource for gaining deeper insights into SQL and data analysis</p>
+                    <a href="https://github.com/SarangGami/SQL_Project_Music_Store_CaseStudy"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/HR.gif">
+                <div class="layer">
+                    <h3>PowerBI HR Analytics Dashboard</h3>
+                    <p>The HR-Analytics Attendance Dashboard uses Power Query, DAX Query and Power BI to analyze employee attendance data and
+                    provide insights into attendance patterns.</p>
+                    <a href="https://github.com/SarangGami/HR-Analytics-Dashboard-PowerBI-PowerQuery"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ecommerce_CX_-_resized (1).png">
+                <div class="layer">
+                    <h3>E-Commerce-Sales-Analysis-Excel-PowerBI</h3>
+                    <p>Showcasing key performance metrics and trends. E-commerce Forecasting Analysis using Excel pivot tables and
+                    charts to present insights and improve data-driven business decisions.</p>
+                    <a href="https://github.com/SarangGami/E-Commerce-Sales-Analysis-Excel-PowerBI"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/SarangGami" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ----------contact----------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> sarang.gami.24@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +918200126912</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sarang-gami-31b407257/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/SarangGami"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.hackerrank.com/sarang_gami_24"><i class="fa-brands fa-hackerrank"></i></a>
+                    <a href="https://instagram.com/sarang_gami?igshid=NmQ2ZmYxZjA="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="GIVE CV FILE PATH" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Designed With <i class="fa-solid fa-heart"></i> by Sarang Gami </p>
+    </div>
+</div>
+
+
+
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx1Rp3ymmrjoPlPSQxGnpB3zvwQo2PB62bbnFRszoLVkmSoIsnJyN05AKSy6XgviOXLwA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
+
+
